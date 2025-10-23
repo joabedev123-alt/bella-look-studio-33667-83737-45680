@@ -5,8 +5,8 @@ import logo from "@/assets/logo.png";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const whatsappNumber = "5511999999999";
-  const whatsappMessage = encodeURIComponent("Olá! Gostaria de mais informações.");
+  const whatsappNumber = "5554981125389";
+  const whatsappMessage = encodeURIComponent("Olá, gostaria de mais informações. Poderia me ajudar?");
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -85,7 +85,7 @@ const Header = () => {
               asChild
             >
               <a 
-                href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`} 
+                href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${whatsappMessage}`} 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -129,7 +129,7 @@ const Header = () => {
                 asChild
               >
                 <a 
-                  href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`} 
+                  href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${whatsappMessage}`} 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >

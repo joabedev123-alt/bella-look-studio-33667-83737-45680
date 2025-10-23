@@ -30,10 +30,10 @@ const Footer = () => {
             <div>
               <h4 className="font-semibold mb-4">Redes Sociais</h4>
               <div className="flex gap-4">
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110" aria-label="Instagram">
+                <a href="https://www.instagram.com/estetica_jucicardoso?igsh=dWJ2M29kdm8wbzR3&utm_source=qr" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110" aria-label="Instagram">
                   <Instagram className="w-5 h-5" />
                 </a>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110" aria-label="Facebook">
+                <a href="https://www.facebook.com/share/192XE18ZLC/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110" aria-label="Facebook">
                   <Facebook className="w-5 h-5" />
                 </a>
                 <a href="mailto:contato@exemplo.com" className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110" aria-label="Email">
