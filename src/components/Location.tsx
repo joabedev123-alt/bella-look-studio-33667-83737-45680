@@ -2,9 +2,9 @@ import { MapPin, Clock, Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Location = () => {
-  const whatsappNumber = "5511999999999";
-  const address = "Rua Leodio João Martins, 500 - Sala 101 - Kobrasol, São José - Florianópolis, SC";
-  const googleMapsUrl = "https://www.google.com/maps/search/?api=1&query=Rua+Leodio+João+Martins,+500+-+Kobrasol,+São+José+-+Florianópolis,+SC";
+  const whatsappNumber = "5554981125389";
+  const address = "Rua Ledio João Martins, 500 - Sala 101 - Kobrasol, São José - Florianópolis, SC";
+  const googleMapsUrl = "https://www.google.com/maps/search/?api=1&query=Rua+Ledio+João+Martins,+500+-+Sala+101+-+Kobrasol,+São+José+-+Florianópolis,+SC";
 
   return (
     <section className="py-20 bg-gradient-to-b from-secondary/20 to-background">
