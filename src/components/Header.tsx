@@ -39,7 +39,7 @@ const Header = () => {
       setIsMobileMenuOpen(false);
     }
   };
-  return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-md shadow-md" : "bg-background/90 backdrop-blur-sm"}`}>
+  return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-md shadow-md" : "bg-transparent"}`}>
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between gap-4">
           {/* Logo */}
@@ -70,7 +70,7 @@ const Header = () => {
                   e.preventDefault();
                   scrollToSection(item.href);
                 }} 
-                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap"
+                className={`text-sm font-medium transition-colors whitespace-nowrap ${isScrolled ? "text-foreground/80 hover:text-primary" : "text-white/90 hover:text-white"}`}
               >
                 {item.label}
               </a>
@@ -97,7 +97,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden p-2 text-foreground hover:text-primary transition-colors" 
+            className={`md:hidden p-2 transition-colors ${isScrolled ? "text-foreground hover:text-primary" : "text-white hover:text-white/80"}`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} 
             aria-label="Toggle menu"
           >
