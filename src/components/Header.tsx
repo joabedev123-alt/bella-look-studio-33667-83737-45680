@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Menu, X } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "/faveicon1/modelo 2_page-0001-Photoroom.png";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const whatsappNumber = "5554981125389";
+  const whatsappNumber = "5551994698093";
   const whatsappMessage = encodeURIComponent("Olá, gostaria de mais informações. Poderia me ajudar?");
   useEffect(() => {
     const handleScroll = () => {
@@ -40,8 +40,8 @@ const Header = () => {
     }
   };
   return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-md shadow-md" : "bg-transparent"}`}>
-      <div className="container mx-auto px-4 py-3">
-        <div className="flex items-center justify-between gap-4">
+      <div className="container mx-auto px-3 sm:px-4 py-2 sm:py-3">
+        <div className="flex items-center justify-between gap-2 sm:gap-4">
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             <a 
@@ -54,8 +54,8 @@ const Header = () => {
             >
               <img 
                 src={logo} 
-                alt="Estética Donna Bella" 
-                className="h-16 md:h-20 w-auto"
+                alt="Studio Full Beauty" 
+                className="h-14 sm:h-16 md:h-20 lg:h-24 w-auto"
               />
             </a>
           </div>
@@ -107,8 +107,8 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 animate-fade-in border-t border-border pt-4">
-            <nav className="flex flex-col gap-3">
+          <div className="md:hidden mt-3 sm:mt-4 pb-3 sm:pb-4 animate-fade-in border-t border-border pt-3 sm:pt-4">
+            <nav className="flex flex-col gap-2 sm:gap-3">
               {navItems.map(item => (
                 <a 
                   key={item.href} 
@@ -117,7 +117,7 @@ const Header = () => {
                     e.preventDefault();
                     scrollToSection(item.href);
                   }} 
-                  className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors py-2"
+                  className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors py-1.5 sm:py-2"
                 >
                   {item.label}
                 </a>
@@ -125,7 +125,7 @@ const Header = () => {
               <Button 
                 variant="whatsapp"
                 size="default" 
-                className="mt-2 w-full" 
+                className="mt-2 w-full text-sm" 
                 asChild
               >
                 <a 

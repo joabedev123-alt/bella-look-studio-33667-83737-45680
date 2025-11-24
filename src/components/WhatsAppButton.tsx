@@ -1,7 +1,7 @@
 import whatsappIcon from "@/assets/whatsapp-icon.webp";
 
 const WhatsAppButton = () => {
-  const whatsappNumber = "5554981125389";
+  const whatsappNumber = "5551994698093";
   const whatsappMessage = encodeURIComponent("Olá, gostaria de mais informações. Poderia me ajudar?");
 
   return (
@@ -9,13 +9,13 @@ const WhatsAppButton = () => {
       href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${whatsappMessage}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-transparent hover:bg-white/10 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 group backdrop-blur-sm border border-white/20"
+      className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 w-14 h-14 sm:w-16 sm:h-16 bg-transparent hover:bg-white/10 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 group backdrop-blur-sm border border-white/20"
       aria-label="Falar no WhatsApp"
     >
       <img 
         src={whatsappIcon} 
         alt="WhatsApp" 
-        className="w-10 h-10 transition-transform"
+        className="w-9 h-9 sm:w-10 sm:h-10 transition-transform"
       />
     </a>
   );

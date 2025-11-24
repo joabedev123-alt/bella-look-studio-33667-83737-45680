@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Star } from "lucide-react";
-import heroVideo from "@/assets/hero-video.mp4";
+import heroVideo from "@/assets/video hero/WhatsApp Video 2025-11-24 at 12.05.15.mp4";
 
 const Hero = () => {
-  const whatsappNumber = "5554981125389";
+  const whatsappNumber = "5551994698093";
   const whatsappMessage = encodeURIComponent("Olá, gostaria de mais informações. Poderia me ajudar?");
 
   return (
@@ -23,26 +23,28 @@ const Hero = () => {
       </div>
 
       {/* Content - Centralized */}
-      <div className="container relative z-10 px-4 py-20 md:py-32 flex items-center justify-center">
+      <div className="container relative z-10 px-4 py-16 sm:py-20 md:py-32 flex items-center justify-center">
         <div className="max-w-3xl text-center animate-fade-in-up">
           {/* Trust Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-white/20">
-            <Star className="w-4 h-4 text-accent fill-accent" />
-            <span className="text-white text-sm font-medium">Mais de 500 clientes satisfeitas</span>
+          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-full mb-4 sm:mb-6 border border-white/20">
+            <Star className="w-3 h-3 sm:w-4 sm:h-4 text-accent fill-accent" />
+            <span className="text-white text-xs sm:text-sm font-medium">Mais de 500 clientes satisfeitas</span>
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            Realce sua beleza natural e renove sua confiança!
+          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight px-2">
+            Studio Full Beauty
+            <br />
+            Onde sua beleza é tratada com excelência.
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed">
-            Cuide de você com o carinho e a atenção que merece. Revitalize seu corpo, desperte sua auto estima e sinta-se ainda mais confiante todos os dias.
+          <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 leading-relaxed px-2">
+            Cuidados completos com unhas, cílios, cabelos e estética, realizados com capricho, técnica e produtos profissionais de alta performance.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Button
               variant="whatsapp"
               size="lg"
@@ -58,14 +60,6 @@ const Hero = () => {
                 <MessageCircle className="mr-2 group-hover:rotate-12 transition-transform" />
                 Agendar no WhatsApp
               </a>
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white hover:text-foreground"
-              onClick={() => document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              Ver resultados
             </Button>
           </div>
         </div>

@@ -9,61 +9,61 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 0 0% 15%;
+    --foreground: 0 0% 25%;
 
-    --card: 30 40% 98%;
-    --card-foreground: 0 0% 15%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 15%;
+    --popover-foreground: 0 0% 25%;
 
-    --primary: 340 45% 55%;
+    --primary: 43 96% 56%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 30 35% 92%;
-    --secondary-foreground: 0 0% 15%;
+    --secondary: 0 0% 90%;
+    --secondary-foreground: 0 0% 25%;
 
-    --muted: 30 30% 95%;
+    --muted: 0 0% 95%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 40 55% 70%;
-    --accent-foreground: 0 0% 15%;
+    --accent: 43 85% 70%;
+    --accent-foreground: 0 0% 25%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 30 25% 90%;
-    --input: 30 25% 90%;
-    --ring: 340 45% 55%;
+    --border: 0 0% 85%;
+    --input: 0 0% 85%;
+    --ring: 43 96% 56%;
 
     --radius: 0.75rem;
     
-    --hero-gradient: linear-gradient(135deg, hsl(340 45% 55% / 0.95), hsl(340 60% 40% / 0.95));
-    --luxury-gradient: linear-gradient(180deg, hsl(30 40% 98%), hsl(0 0% 100%));
-    --subtle-gradient: linear-gradient(135deg, hsl(30 35% 96%), hsl(340 25% 96%));
+    --hero-gradient: linear-gradient(135deg, hsl(43 96% 56% / 0.95), hsl(43 85% 45% / 0.95));
+    --luxury-gradient: linear-gradient(180deg, hsl(0 0% 98%), hsl(0 0% 100%));
+    --subtle-gradient: linear-gradient(135deg, hsl(0 0% 96%), hsl(0 0% 90%));
     
-    --shadow-soft: 0 4px 20px hsl(340 45% 55% / 0.08);
-    --shadow-medium: 0 8px 30px hsl(340 45% 55% / 0.12);
-    --shadow-strong: 0 20px 60px hsl(340 45% 55% / 0.2);
+    --shadow-soft: 0 4px 20px hsl(43 96% 56% / 0.08);
+    --shadow-medium: 0 8px 30px hsl(43 96% 56% / 0.12);
+    --shadow-strong: 0 20px 60px hsl(43 96% 56% / 0.2);
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-foreground: 0 0% 25%;
 
-    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary: 43 96% 56%;
 
-    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-primary-foreground: 0 0% 100%;
 
-    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent: 0 0% 95%;
 
-    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-accent-foreground: 0 0% 25%;
 
-    --sidebar-border: 220 13% 91%;
+    --sidebar-border: 0 0% 85%;
 
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 43 96% 56%;
   }
 }
 
@@ -74,10 +74,25 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground font-['Poppins'] antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   
   h1, h2, h3, h4, h5, h6 {
     @apply font-['Playfair_Display'];
+    word-wrap: break-word;
+  }
+  
+  /* Mobile optimizations */
+  @media (max-width: 640px) {
+    * {
+      -webkit-tap-highlight-color: transparent;
+    }
+    
+    img, video {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
 
